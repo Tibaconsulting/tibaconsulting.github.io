@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="hu" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIBAConsulting Kft. - Adatközponti Szakértelem</title>
+    <meta name="description" content="TIBAConsulting Kft. - Adatközponti szakértelem: oktatás, szaktanácsadás, tervezés és kivitelezés. HPE, Cisco és SAN technológiák.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Egyedi Tailwind konfiguráció a színekhez - FONTOS: A fő szkript ELŐTT kell lennie -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#8a9bff',  /* A logó kék színe */
+                        'primary-orange': '#f38f3a', /* A logó narancs színe */
+                        'dark-text': '#2c3e50',      /* Sötét szöveg */
+                        'light-text': '#ecf0f1',     /* Világos szöveg */
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+    <!-- Egyedi stílusok -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white text-dark-text antialiased">
+
+    <!-- 1. Fejléc és Navigáció -->
+    <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logó -->
+            <div>
+                <a href="#home">
+                    <!-- A logó fájl neve. Biztosítsa, hogy a 'tclogo.jpg' fájl ugyanabban a mappában van! -->
+                    <img src="tclogo.jpg" alt="TIBAConsulting Kft. Logó" class="h-10 md:h-12 w-auto">
+                </a>
+            </div>
+            
+            <!-- Navigációs menü (Desktop) -->
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#about" class="font-medium text-gray-700 hover:text-primary-orange transition-colors">Rólunk</a></li>
+                <li><a href="#services" class="font-medium text-gray-700 hover:text-primary-orange transition-colors">Szolgáltatások</a></li>
+                <li><a href="#education" class="font-medium text-gray-700 hover:text-primary-orange transition-colors">Oktatás</a></li>
+                <li><a href="#contact" class="bg-primary-orange text-white px-4 py-2 rounded-full font-medium hover:opacity-90 transition-opacity">Kapcsolat</a></li>
+            </ul>
+            
+            <!-- Kapcsolat gomb (Mobil) -->
+            <div class="md:hidden">
+                <a href="#contact" class="bg-primary-orange text-white px-4 py-2 rounded-full font-medium text-sm">Kapcsolat</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Fő tartalom -->
+    <main>
+
+        <!-- 2. Hero Szekció -->
+        <section id="home" class="relative h-[70vh] min-h-[500px] bg-cover bg-top" style="background-image: url('https://images.unsplash.com/photo-1628624747441-942c7004d092?auto=format&fit=crop&w=1920&q=80');">
+            <!-- Sötétítő overlay -->
+            <div class="absolute inset-0 bg-black/60"></div>
+            
+            <div class="relative z-10 container mx-auto px-6 h-full flex flex-col justify-center text-white">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight max-w-3xl">
+                    <span class="text-primary-orange">Adatközponti Szakértelem:</span><br>
+                    Oktatástól a Magas Szintű Kivitelezésig.
+                </h1>
+                <p class="text-xl md:text-2xl font-light mt-6 max-w-2xl">
+                    Több évtizedes szakmai tapasztalattal a megbízható IT infrastruktúráért.
+                </p>
+                <div class="mt-10">
+                    <a href="#services" class="bg-primary-orange text-white px-8 py-3 rounded-full text-lg font-semibold hover:opacity-90 transition-opacity">
+                        Ismerje meg szolgáltatásainkat
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Rólunk Szekció -->
+        <section id="about" class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-primary-orange font-semibold uppercase">Rólunk</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark-text mt-2">
+                        Független Szakértelem, Komplett Megoldások.
+                    </h2>
+                    <p class="text-lg text-gray-700 mt-6 leading-relaxed">
+                        A TIBAConsulting Kft. 2015 óta nyújt magas szintű, gyártói tapasztalaton alapuló szolgáltatásokat az adatközponti technológiák területén.
+                    </p>
+                    <p class="text-lg text-gray-700 mt-4 leading-relaxed">
+                        Nem "dobozokat" árusítunk – mi megoldásokban gondolkodunk. Célunk, hogy független tanácsadóként, tervezőként és oktatóként segítsük ügyfeleinket a legmegfelelőbb technológiai döntések meghozatalában. Több évtizedes tapasztalattal rendelkező tulajdonosunk és kollégáink aktívan részt vesznek minden projektben, a tervezéstől kezdve a kivitelezésig. Függetlenségünk biztosítja, hogy ügyfeleink mindig a valós igényeiknek leginkább megfelelő, nem pedig egy adott gyártó által erőltetett megoldást kapják. Szakértőink nem csak a technológiát, hanem az üzleti folyamatokat is megértik, így a szállított infrastruktúra valóban értéket teremt.
+                    </p>
+                    <p class="text-lg text-gray-700 mt-4 leading-relaxed">
+                        Szükség esetén, a komplett megoldás érdekében, természetesen biztosítjuk a projektekhez szükséges hardver- és szoftvereszközök beszerzését is.
+                    </p>
+                </div>
+                
+                <!-- Kép a Rólunk szekcióhoz -->
+                <div class="relative">
+                    <div class="aspect-w-4 aspect-h-2"> <!-- Képarány módosítva 4:2-re (szélesebb) -->
+                        <img src="Gemini_DC.png"
+                             alt="Szakmai konzultáció"
+                             class="rounded-lg shadow-xl object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Szolgáltatások Szekció -->
+        <section id="services" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <span class="text-primary-orange font-semibold uppercase">Szolgáltatásaink</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark-text mt-2">
+                        Technológiai Megoldások az Alapoktól a Felhőkig
+                    </h2>
+                </div>
+                
+                <div class="mt-16 grid md:grid-cols-3 gap-8">
+                    
+                    <!-- Szolgáltatás kártya 1 -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                        <h3 class="text-2xl font-bold text-primary-orange">Szaktanácsadás és Tervezés</h3>
+                        <p class="text-gray-700 mt-4">
+                            Mélyreható konzultáció, audit és felmérés az Ön igényeire szabva. Vállaljuk komplex adatközponti (szerver, hálózat, adattárolás, AI) rendszerek tervezését.
+                        </p>
+                    </div>
+                    
+                    <!-- Szolgáltatás kártya 2 -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                        <h3 class="text-2xl font-bold text-primary-orange">Kivitelezés és Üzembe helyezés</h3>
+                        <p class="text-gray-700 mt-4">
+                            Nem állunk meg a tervezőasztalnál. Vállaljuk adatközponti rendszerek, vezetékes és vezeték nélküli hálózatok teljes körű telepítését, beüzemelését, gyenge- és erősáramú kivitelezéssel együtt.
+                        </p>
+                    </div>
+                    
+                    <!-- Szolgáltatás kártya 3 -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                        <h3 class="text-2xl font-bold text-primary-orange">Optimalizálás és Hibaelhárítás</h3>
+                        <p class="text-gray-700 mt-4">
+                            Már meglévő rendszerek optimalizálása a csúcsteljesítmény érdekében. Tapasztalattal rendelkezünk komplex, "elromlott" rendszerek hibakeresésében és javításában is.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+        <!-- 5. Fókusz Szekció -->
+        <section class="py-16 md:py-24 bg-dark-text text-light-text">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">
+                    Mire specializálódtunk?
+                </h2>
+                <p class="text-lg text-gray-200 mt-6 leading-relaxed max-w-3xl mx-auto">
+                    Hisszük, hogy a valódi szakértelem a fókuszban rejlik. Mi 100%-ban az adatközponti és hálózati infrastruktúrára koncentrálunk, hogy a legmélyebb tudást nyújthassuk. Ez a dedikált fókusz teszi lehetővé, hogy ne csak a felszínt kapargassuk, hanem valódi, mélyreható és gyártói szintű tudással támogassuk projektjeit, legyen szó komplex hibakeresésről vagy egy teljesen új rendszer felépítéséről.
+                </p>
+                <ul class="text-lg mt-6 space-y-3 inline-flex flex-col items-start">
+                    <li class="flex items-center">
+                        <svg class="w-6 h-6 text-primary-orange mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        Adatközponti szerver, storage és SAN hálózatok
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-6 h-6 text-primary-orange mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        Vezetékes és vezeték nélküli hálózati megoldások
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-6 h-6 text-primary-orange mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        Erős- és gyengeáramú adatközponti kivitelezés
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 6. Oktatás Szekció -->
+        <section id="education" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <span class="text-primary-orange font-semibold uppercase">Tudásátadás</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-dark-text mt-2">
+                    Kiemelt Szolgáltatásunk: Oktatás
+                </h2>
+                <p class="text-lg text-gray-700 mt-6 max-w-3xl mx-auto leading-relaxed">
+                    Büszkék vagyunk rá, hogy kollégáink több nagy nevű gyártó, mint például a HPE és a Cisco, hivatalos, minősített oktatói (Certified Instructor). Ez nem csupán egy minősítés: ez garantálja, hogy naprakész és mély, gyakorlati tudást adunk át. A megszerzett több évtizedes tapasztalatot és mély technológiai tudást szívesen osztjuk meg dedikált, testreszabott képzéseink keretében, akár az Ön cégénél is.
+                </p>
+                
+                <div class="mt-12 flex flex-wrap justify-center gap-8">
+                    <!-- Oktatási témák "buborékok" -->
+                    <span class="bg-primary-blue text-dark-text font-medium px-6 py-3 rounded-full text-lg">
+                        HPE Storage
+                    </span>
+                    <span class="bg-primary-orange text-white font-medium px-6 py-3 rounded-full text-lg">
+                        SAN Hálózatok
+                    </span>
+                    <span class="bg-primary-blue text-dark-text font-medium px-6 py-3 rounded-full text-lg">
+                        Cisco Hálózati Ismeretek
+                    </span>
+                    <span class="bg-primary-orange text-white font-medium px-6 py-3 rounded-full text-lg">
+                        Aruba / Comware
+                    </span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 7. Kapcsolat Szekció -->
+        <section id="contact" class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark-text">
+                    Vegye fel velünk a kapcsolatot!
+                </h2>
+                <p class="text-lg text-gray-700 mt-6 max-w-2xl mx-auto">
+                    Kérdése van, vagy egy megbeszélést szeretne egyeztetni? 
+                    Állunk rendelkezésére az alábbi elérhetőségeken.
+                </p>
+                
+                <div class="mt-12 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12 text-left">
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold text-dark-text">Központi elérhetőség</h3>
+                        <p class="text-gray-700 mt-2">Strenner Anita Heléna, ügyvezető</p>
+                        <a href="mailto:anita@tibaconsulting.net" class="block text-lg text-primary-orange font-medium mt-4 hover:underline">
+                            anita@tibaconsulting.net
+                        </a>
+                        <a href="tel:+36202500737" class="block text-lg text-primary-orange font-medium mt-1 hover:underline">
+                            +36 20 2500737
+                        </a>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold text-dark-text">Cégadatok</h3>
+                        <p class="text-gray-700 mt-2">TIBAConsulting Kft.</p>
+                        <p class="text-gray-700 mt-1">2600 Vác, Kamilla u. 1. E.épület</p>
+                        <p class="text-gray-700 mt-1">Adószám: 25396562-2-13</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 8. Lábléc -->
+    <footer class="bg-dark-text text-gray-400 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 TIBAConsulting Kft. Minden jog fenntartva.</p>
+            <div class="mt-4 text-sm">
+                <p>Cégjegyzékszám: 13-09-177604 | Székhely: 2600 Vác, Kamilla u. 1. E.épület</p>
+                <a href="privacy.html" target="_blank" class="text-gray-400 hover:text-white underline mt-2 inline-block">
+                    Adatvédelmi Nyilatkozat
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
