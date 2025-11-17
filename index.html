@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TIBAConsulting Kft. - Adatközponti Szakértelem</title>
-    <meta name="description" content="TIBAConsulting Kft. - Adatközponti szakértelem: oktatás, szaktanácsadás, tervezés és kivitelezés. HPE, Cisco és SAN technológiák.">
+    <title data-i18n="page.title">TIBAConsulting Kft. - Adatközponti Szakértelem</title>
+    <meta name="description" content="" data-i18n="page.description" data-i18n-attr="content">
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Egyedi Tailwind konfiguráció a színekhez - FONTOS: A fő szkript ELŐTT kell lennie -->
+    <!-- Egyedi Tailwind konfiguráció a színekhez -->
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'primary-blue': '#8a9bff',  /* A logó kék színe */
-                        'primary-orange': '#f38f3a', /* A logó narancs színe */
-                        'dark-text': '#2c3e50',      /* Sötét szöveg */
-                        'light-text': '#ecf0f1',     /* Világos szöveg */
+                        'primary-blue': '#8a9bff',
+                        'primary-orange': '#f38f3a',
+                        'dark-text': '#2c3e50',
+                        'light-text': '#ecf0f1',
                     }
                 }
             }
@@ -35,6 +35,12 @@
         body {
             font-family: 'Inter', sans-serif;
         }
+        /* Stílus a nyelvváltó aktív gombjának */
+        .lang-switcher button.active {
+            font-weight: 800;
+            color: #f38f3a; /* primary-orange */
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body class="bg-white text-dark-text antialiased">
@@ -45,22 +51,33 @@
             <!-- Logó -->
             <div>
                 <a href="#home">
-                    <!-- A logó fájl neve. Biztosítsa, hogy a 'tclogo.jpg' fájl ugyanabban a mappában van! -->
                     <img src="tclogo.jpg" alt="TIBAConsulting Kft. Logó" class="h-10 md:h-12 w-auto">
                 </a>
             </div>
             
             <!-- Navigációs menü (Desktop) -->
-            <ul class="hidden md:flex space-x-6">
-                <li><a href="#about" class="font-medium text-gray-700 hover:text-primary-orange transition-colors">Rólunk</a></li>
-                <li><a href="#services" class="font-medium text-gray-700 hover:text-primary-orange transition-colors">Szolgáltatások</a></li>
-                <li><a href="#education" class="font-medium text-gray-700 hover:text-primary-orange transition-colors">Oktatás</a></li>
-                <li><a href="#contact" class="bg-primary-orange text-white px-4 py-2 rounded-full font-medium hover:opacity-90 transition-opacity">Kapcsolat</a></li>
+            <ul class="hidden md:flex space-x-6 items-center">
+                <li><a href="#about" class="font-medium text-gray-700 hover:text-primary-orange transition-colors" data-i18n="nav.about">Rólunk</a></li>
+                <li><a href="#services" class="font-medium text-gray-700 hover:text-primary-orange transition-colors" data-i18n="nav.services">Szolgáltatások</a></li>
+                <li><a href="#education" class="font-medium text-gray-700 hover:text-primary-orange transition-colors" data-i18n="nav.education">Oktatás</a></li>
+                <li><a href="#contact" class="bg-primary-orange text-white px-4 py-2 rounded-full font-medium hover:opacity-90 transition-opacity" data-i18n="nav.contact">Kapcsolat</a></li>
+                <!-- Nyelvváltó (Desktop) -->
+                <li class="lang-switcher flex space-x-2 pl-4">
+                    <button onclick="changeLanguage('hu')" class="font-medium text-gray-500 hover:text-primary-orange" data-lang="hu">HU</button>
+                    <span class="text-gray-300">|</span>
+                    <button onclick="changeLanguage('en')" class="font-medium text-gray-500 hover:text-primary-orange" data-lang="en">EN</button>
+                </li>
             </ul>
             
-            <!-- Kapcsolat gomb (Mobil) -->
-            <div class="md:hidden">
-                <a href="#contact" class="bg-primary-orange text-white px-4 py-2 rounded-full font-medium text-sm">Kapcsolat</a>
+            <!-- Mobil menü (Kapcsolat + Nyelvváltó) -->
+            <div class="md:hidden flex items-center space-x-4">
+                <!-- Nyelvváltó (Mobil) -->
+                <div class="lang-switcher flex space-x-1">
+                    <button onclick="changeLanguage('hu')" class="font-medium text-gray-500 text-sm" data-lang="hu">HU</button>
+                    <span class="text-gray-300">|</span>
+                    <button onclick="changeLanguage('en')" class="font-medium text-gray-500 text-sm" data-lang="en">EN</button>
+                </div>
+                <a href="#contact" class="bg-primary-orange text-white px-4 py-2 rounded-full font-medium text-sm" data-i18n="nav.contactMobile">Kapcsolat</a>
             </div>
         </nav>
     </header>
@@ -75,14 +92,14 @@
             
             <div class="relative z-10 container mx-auto px-6 h-full flex flex-col justify-center text-white">
                 <h1 class="text-4xl md:text-6xl font-extrabold leading-tight max-w-3xl">
-                    <span class="text-primary-orange">Adatközponti Szakértelem:</span><br>
-                    Oktatástól a Magas Szintű Kivitelezésig.
+                    <span class="text-primary-orange" data-i18n="hero.titlePrefix">Adatközponti Szakértelem:</span><br>
+                    <span data-i18n="hero.titleSuffix">Oktatástól a Magas Szintű Kivitelezésig.</span>
                 </h1>
-                <p class="text-xl md:text-2xl font-light mt-6 max-w-2xl">
+                <p class="text-xl md:text-2xl font-light mt-6 max-w-2xl" data-i18n="hero.subtitle">
                     Több évtizedes szakmai tapasztalattal a megbízható IT infrastruktúráért.
                 </p>
                 <div class="mt-10">
-                    <a href="#services" class="bg-primary-orange text-white px-8 py-3 rounded-full text-lg font-semibold hover:opacity-90 transition-opacity">
+                    <a href="#services" class="bg-primary-orange text-white px-8 py-3 rounded-full text-lg font-semibold hover:opacity-90 transition-opacity" data-i18n="hero.cta">
                         Ismerje meg szolgáltatásainkat
                     </a>
                 </div>
@@ -93,27 +110,27 @@
         <section id="about" class="py-16 md:py-24 bg-gray-50">
             <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <span class="text-primary-orange font-semibold uppercase">Rólunk</span>
-                    <h2 class="text-3xl md:text-4xl font-bold text-dark-text mt-2">
+                    <span class="text-primary-orange font-semibold uppercase" data-i18n="about.tag">Rólunk</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark-text mt-2" data-i18n="about.title">
                         Független Szakértelem, Komplett Megoldások.
                     </h2>
-                    <p class="text-lg text-gray-700 mt-6 leading-relaxed">
+                    <p class="text-lg text-gray-700 mt-6 leading-relaxed" data-i18n="about.p1">
                         A TIBAConsulting Kft. 2015 óta nyújt magas szintű, gyártói tapasztalaton alapuló szolgáltatásokat az adatközponti technológiák területén.
                     </p>
-                    <p class="text-lg text-gray-700 mt-4 leading-relaxed">
+                    <p class="text-lg text-gray-700 mt-4 leading-relaxed" data-i18n="about.p2">
                         Nem "dobozokat" árusítunk – mi megoldásokban gondolkodunk. Célunk, hogy független tanácsadóként, tervezőként és oktatóként segítsük ügyfeleinket a legmegfelelőbb technológiai döntések meghozatalában. Több évtizedes tapasztalattal rendelkező tulajdonosunk és kollégáink aktívan részt vesznek minden projektben, a tervezéstől kezdve a kivitelezésig. Függetlenségünk biztosítja, hogy ügyfeleink mindig a valós igényeiknek leginkább megfelelő, nem pedig egy adott gyártó által erőltetett megoldást kapják. Szakértőink nem csak a technológiát, hanem az üzleti folyamatokat is megértik, így a szállított infrastruktúra valóban értéket teremt.
                     </p>
-                    <p class="text-lg text-gray-700 mt-4 leading-relaxed">
+                    <p class="text-lg text-gray-700 mt-4 leading-relaxed" data-i18n="about.p3">
                         Szükség esetén, a komplett megoldás érdekében, természetesen biztosítjuk a projektekhez szükséges hardver- és szoftvereszközök beszerzését is.
                     </p>
                 </div>
                 
                 <!-- Kép a Rólunk szekcióhoz -->
                 <div class="relative">
-                    <div class="aspect-w-4 aspect-h-2"> <!-- Képarány módosítva 4:2-re (szélesebb) -->
-                        <img src="Gemini_DC.jpg"
+                    <div class="aspect-w-4 aspect-h-2">
+                        <img src="Gemini_DC.png"
                              alt="Szakmai konzultáció"
-                             class="rounded-lg shadow-xl object-cover">
+                             class="rounded-lg shadow-xl object-cover" data-i18n="about.imageAlt" data-i18n-attr="alt">
                     </div>
                 </div>
             </div>
@@ -123,8 +140,8 @@
         <section id="services" class="py-16 md:py-24 bg-white">
             <div class="container mx-auto px-6">
                 <div class="text-center max-w-3xl mx-auto">
-                    <span class="text-primary-orange font-semibold uppercase">Szolgáltatásaink</span>
-                    <h2 class="text-3xl md:text-4xl font-bold text-dark-text mt-2">
+                    <span class="text-primary-orange font-semibold uppercase" data-i18n="services.tag">Szolgáltatásaink</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark-text mt-2" data-i18n="services.title">
                         Technológiai Megoldások az Alapoktól a Felhőkig
                     </h2>
                 </div>
@@ -133,24 +150,24 @@
                     
                     <!-- Szolgáltatás kártya 1 -->
                     <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                        <h3 class="text-2xl font-bold text-primary-orange">Szaktanácsadás és Tervezés</h3>
-                        <p class="text-gray-700 mt-4">
+                        <h3 class="text-2xl font-bold text-primary-orange" data-i18n="services.card1.title">Szaktanácsadás és Tervezés</h3>
+                        <p class="text-gray-700 mt-4" data-i18n="services.card1.text">
                             Mélyreható konzultáció, audit és felmérés az Ön igényeire szabva. Vállaljuk komplex adatközponti (szerver, hálózat, adattárolás, AI) rendszerek tervezését.
                         </p>
                     </div>
                     
                     <!-- Szolgáltatás kártya 2 -->
                     <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                        <h3 class="text-2xl font-bold text-primary-orange">Kivitelezés és Üzembe helyezés</h3>
-                        <p class="text-gray-700 mt-4">
+                        <h3 class="text-2xl font-bold text-primary-orange" data-i18n="services.card2.title">Kivitelezés és Üzembe helyezés</h3>
+                        <p class="text-gray-700 mt-4" data-i18n="services.card2.text">
                             Nem állunk meg a tervezőasztalnál. Vállaljuk adatközponti rendszerek, vezetékes és vezeték nélküli hálózatok teljes körű telepítését, beüzemelését, gyenge- és erősáramú kivitelezéssel együtt.
                         </p>
                     </div>
                     
                     <!-- Szolgáltatás kártya 3 -->
                     <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                        <h3 class="text-2xl font-bold text-primary-orange">Optimalizálás és Hibaelhárítás</h3>
-                        <p class="text-gray-700 mt-4">
+                        <h3 class="text-2xl font-bold text-primary-orange" data-i18n="services.card3.title">Optimalizálás és Hibaelhárítás</h3>
+                        <p class="text-gray-700 mt-4" data-i18n="services.card3.text">
                             Már meglévő rendszerek optimalizálása a csúcsteljesítmény érdekében. Tapasztalattal rendelkezünk komplex, "elromlott" rendszerek hibakeresésében és javításában is.
                         </p>
                     </div>
@@ -162,24 +179,24 @@
         <!-- 5. Fókusz Szekció -->
         <section class="py-16 md:py-24 bg-dark-text text-light-text">
             <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold text-white">
+                <h2 class="text-3xl md:text-4xl font-bold text-white" data-i18n="focus.title">
                     Mire specializálódtunk?
                 </h2>
-                <p class="text-lg text-gray-200 mt-6 leading-relaxed max-w-3xl mx-auto">
+                <p class="text-lg text-gray-200 mt-6 leading-relaxed max-w-3xl mx-auto" data-i18n="focus.text">
                     Hisszük, hogy a valódi szakértelem a fókuszban rejlik. Mi 100%-ban az adatközponti és hálózati infrastruktúrára koncentrálunk, hogy a legmélyebb tudást nyújthassuk. Ez a dedikált fókusz teszi lehetővé, hogy ne csak a felszínt kapargassuk, hanem valódi, mélyreható és gyártói szintű tudással támogassuk projektjeit, legyen szó komplex hibakeresésről vagy egy teljesen új rendszer felépítéséről.
                 </p>
                 <ul class="text-lg mt-6 space-y-3 inline-flex flex-col items-start">
                     <li class="flex items-center">
                         <svg class="w-6 h-6 text-primary-orange mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        Adatközponti szerver, storage és SAN hálózatok
+                        <span data-i18n="focus.item1">Adatközponti szerver, storage és SAN hálózatok</span>
                     </li>
                     <li class="flex items-center">
                         <svg class="w-6 h-6 text-primary-orange mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        Vezetékes és vezeték nélküli hálózati megoldások
+                        <span data-i18n="focus.item2">Vezetékes és vezeték nélküli hálózati megoldások</span>
                     </li>
                     <li class="flex items-center">
                         <svg class="w-6 h-6 text-primary-orange mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        Erős- és gyengeáramú adatközponti kivitelezés
+                        <span data-i18n="focus.item3">Erős- és gyengeáramú adatközponti kivitelezés</span>
                     </li>
                 </ul>
             </div>
@@ -188,26 +205,26 @@
         <!-- 6. Oktatás Szekció -->
         <section id="education" class="py-16 md:py-24 bg-white">
             <div class="container mx-auto px-6 text-center">
-                <span class="text-primary-orange font-semibold uppercase">Tudásátadás</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-dark-text mt-2">
+                <span class="text-primary-orange font-semibold uppercase" data-i18n="education.tag">Tudásátadás</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-dark-text mt-2" data-i18n="education.title">
                     Kiemelt Szolgáltatásunk: Oktatás
                 </h2>
-                <p class="text-lg text-gray-700 mt-6 max-w-3xl mx-auto leading-relaxed">
+                <p class="text-lg text-gray-700 mt-6 max-w-3xl mx-auto leading-relaxed" data-i18n="education.text">
                     Büszkék vagyunk rá, hogy kollégáink több nagy nevű gyártó, mint például a HPE és a Cisco, hivatalos, minősített oktatói (Certified Instructor). Ez nem csupán egy minősítés: ez garantálja, hogy naprakész és mély, gyakorlati tudást adunk át. A megszerzett több évtizedes tapasztalatot és mély technológiai tudást szívesen osztjuk meg dedikált, testreszabott képzéseink keretében, akár az Ön cégénél is.
                 </p>
                 
                 <div class="mt-12 flex flex-wrap justify-center gap-8">
                     <!-- Oktatási témák "buborékok" -->
-                    <span class="bg-primary-blue text-dark-text font-medium px-6 py-3 rounded-full text-lg">
+                    <span class="bg-primary-blue text-dark-text font-medium px-6 py-3 rounded-full text-lg" data-i18n="education.topic1">
                         HPE Storage
                     </span>
-                    <span class="bg-primary-orange text-white font-medium px-6 py-3 rounded-full text-lg">
+                    <span class="bg-primary-orange text-white font-medium px-6 py-3 rounded-full text-lg" data-i18n="education.topic2">
                         SAN Hálózatok
                     </span>
-                    <span class="bg-primary-blue text-dark-text font-medium px-6 py-3 rounded-full text-lg">
+                    <span class="bg-primary-blue text-dark-text font-medium px-6 py-3 rounded-full text-lg" data-i18n="education.topic3">
                         Cisco Hálózati Ismeretek
                     </span>
-                    <span class="bg-primary-orange text-white font-medium px-6 py-3 rounded-full text-lg">
+                    <span class="bg-primary-orange text-white font-medium px-6 py-3 rounded-full text-lg" data-i18n="education.topic4">
                         Aruba / Comware
                     </span>
                 </div>
@@ -218,18 +235,18 @@
         <!-- 7. Kapcsolat Szekció -->
         <section id="contact" class="py-16 md:py-24 bg-gray-50">
             <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold text-dark-text">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark-text" data-i18n="contact.title">
                     Vegye fel velünk a kapcsolatot!
                 </h2>
-                <p class="text-lg text-gray-700 mt-6 max-w-2xl mx-auto">
+                <p class="text-lg text-gray-700 mt-6 max-w-2xl mx-auto" data-i18n="contact.text">
                     Kérdése van, vagy egy megbeszélést szeretne egyeztetni? 
                     Állunk rendelkezésére az alábbi elérhetőségeken.
                 </p>
                 
                 <div class="mt-12 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12 text-left">
                     <div class="bg-white p-8 rounded-lg shadow-lg">
-                        <h3 class="text-xl font-semibold text-dark-text">Központi elérhetőség</h3>
-                        <p class="text-gray-700 mt-2">Strenner Anita Heléna, ügyvezető</p>
+                        <h3 class="text-xl font-semibold text-dark-text" data-i18n="contact.card1.title">Központi elérhetőség</h3>
+                        <p class="text-gray-700 mt-2" data-i18n="contact.card1.person">Strenner Anita Heléna, ügyvezető</p>
                         <a href="mailto:anita@tibaconsulting.net" class="block text-lg text-primary-orange font-medium mt-4 hover:underline">
                             anita@tibaconsulting.net
                         </a>
@@ -239,10 +256,10 @@
                     </div>
                     
                     <div class="bg-white p-8 rounded-lg shadow-lg">
-                        <h3 class="text-xl font-semibold text-dark-text">Cégadatok</h3>
+                        <h3 class="text-xl font-semibold text-dark-text" data-i18n="contact.card2.title">Cégadatok</h3>
                         <p class="text-gray-700 mt-2">TIBAConsulting Kft.</p>
-                        <p class="text-gray-700 mt-1">2600 Vác, Kamilla u. 1. E.épület</p>
-                        <p class="text-gray-700 mt-1">Adószám: 25396562-2-13</p>
+                        <p class="text-gray-700 mt-1" data-i18n="contact.card2.address">2600 Vác, Kamilla u. 1. E.épület</p>
+                        <p class="text-gray-700 mt-1" data-i18n="contact.card2.tax">Adószám: 25396562-2-13</p>
                     </div>
                 </div>
             </div>
@@ -253,16 +270,277 @@
     <!-- 8. Lábléc -->
     <footer class="bg-dark-text text-gray-400 py-12">
         <div class="container mx-auto px-6 text-center">
-            <p>&copy; 2024 TIBAConsulting Kft. Minden jog fenntartva.</p>
+            <p data-i18n="footer.copyright">&copy; 2024 TIBAConsulting Kft. Minden jog fenntartva.</p>
             <div class="mt-4 text-sm">
-                <p>Cégjegyzékszám: 13-09-177604 | Székhely: 2600 Vác, Kamilla u. 1. E.épület</p>
-                <a href="privacy.html" target="_blank" class="text-gray-400 hover:text-white underline mt-2 inline-block">
+                <p data-i18n="footer.companyDetails">Cégjegyzékszám: 13-09-177604 | Székhely: 2600 Vác, Kamilla u. 1. E.épület</p>
+                <a href="privacy.html" target="_blank" class="text-gray-400 hover:text-white underline mt-2 inline-block" data-i18n="footer.privacyLink">
                     Adatvédelmi Nyilatkozat
                 </a>
             </div>
         </div>
     </footer>
 
-</body>
+    <!-- 
+        BEÁGYAZOTT NYELVI SZKRIPT (V2)
+        A js/i18n.js, locales/hu.json és locales/en.json fájlok tartalma
+        ide van ágyazva, hogy a Canvas előnézetben is működjön.
+    -->
+    <script>
+        // === 1. FORDÍTÁSOK (JSON TARTALOM) ===
+        const translations = {
+            'hu': {
+                "page": {
+                    "title": "TIBAConsulting Kft. - Adatközponti Szakértelem",
+                    "description": "TIBAConsulting Kft. - Adatközponti szakértelem: oktatás, szaktanácsadás, tervezés és kivitelezés. HPE, Cisco és SAN technológiák."
+                },
+                "nav": {
+                    "about": "Rólunk",
+                    "services": "Szolgáltatások",
+                    "education": "Oktatás",
+                    "contact": "Kapcsolat",
+                    "contactMobile": "Kapcsolat"
+                },
+                "hero": {
+                    "titlePrefix": "Adatközponti Szakértelem:",
+                    "titleSuffix": "Oktatástól a Magas Szintű Kivitelezésig.",
+                    "subtitle": "Több évtizedes szakmai tapasztalattal a megbízható IT infrastruktúráért.",
+                    "cta": "Ismerje meg szolgáltatásainkat"
+                },
+                "about": {
+                    "tag": "Rólunk",
+                    "title": "Független Szakértelem, Komplett Megoldások.",
+                    "p1": "A TIBAConsulting Kft. 2015 óta nyújt magas szintű, gyártói tapasztalaton alapuló szolgáltatásokat az adatközponti technológiák területén.",
+                    "p2": "Nem \"dobozokat\" árusítunk – mi megoldásokban gondolkodunk. Célunk, hogy független tanácsadóként, tervezőként és oktatóként segítsük ügyfeleinket a legmegfelelőbb technológiai döntések meghozatalában. Több évtizedes tapasztalattal rendelkező tulajdonosunk és kollégáinK aktívan részt vesznek minden projektben, a tervezéstől kezdve a kivitelezésig. Függetlenségünk biztosítja, hogy ügyfeleink mindig a valós igényeiknek leginkább megfelelő, nem pedig egy adott gyártó által erőltetett megoldást kapják. Szakértőink nem csak a technológiát, hanem az üzleti folyamatokat is megértik, így a szállított infrastruktúra valóban értéket teremt.",
+                    "p3": "Szükség esetén, a komplett megoldás érdekében, természetesen biztosítjuk a projektekhez szükséges hardver- és szoftvereszközök beszerzését is.",
+                    "imageAlt": "Szakmai konzultáció"
+                },
+                "services": {
+                    "tag": "Szolgáltatásaink",
+                    "title": "Technológiai Megoldások az Alapoktól a Felhőkig",
+                    "card1": {
+                        "title": "Szaktanácsadás és Tervezés",
+                        "text": "Mélyreható konzultáció, audit és felmérés az Ön igényeire szabva. Vállaljuk komplex adatközponti (szerver, hálózat, adattárolás, AI) rendszerek tervezését."
+                    },
+                    "card2": {
+                        "title": "Kivitelezés és Üzembe helyezés",
+                        "text": "Nem állunk meg a tervezőasztalnál. Vállaljuk adatközponti rendszerek, vezetékes és vezeték nélküli hálózatok teljes körű telepítését, beüzemelését, gyenge- és erősáramú kivitelezéssel együtt."
+                    },
+                    "card3": {
+                        "title": "Optimalizálás és Hibaelhárítás",
+                        "text": "Már meglévő rendszerek optimalizálása a csúcsteljesítmény érdekében. Tapasztalattal rendelkezünk komplex, \"elromlott\" rendszerek hibakeresésében és javításában is."
+                    }
+                },
+                "focus": {
+                    "title": "Mire specializálódtunk?",
+                    "text": "Hisszük, hogy a valódi szakértelem a fókuszban rejlik. Mi 100%-ban az adatközponti és hálózati infrastruktúrára koncentrálunk, hogy a legmélyebb tudást nyújthassuk. Ez a dedikált fókusz teszi lehetővé, hogy ne csak a felszínt kapargassuk, hanem valódi, mélyreható és gyártói szintű tudással támogassuk projektjeit, legyen szó komplex hibakeresésről vagy egy teljesen új rendszer felépítéséről.",
+                    "item1": "Adatközponti szerver, storage és SAN hálózatok",
+                    "item2": "Vezetékes és vezeték nélküli hálózati megoldások",
+                    "item3": "Erős- és gyengeáramú adatközponti kivitelezés"
+                },
+                "education": {
+                    "tag": "Tudásátadás",
+                    "title": "Kiemelt Szolgáltatásunk: Oktatás",
+                    "text": "Büszkék vagyunk rá, hogy kollégáink több nagy nevű gyártó, mint például a HPE és a Cisco, hivatalos, minősített oktatói (Certified Instructor). Ez nem csupán egy minősítés: ez garantálja, hogy naprakész és mély, gyakorlati tudást adunk át. A megszerzett több évtizedes tapasztalatot és mély technológiai tudást szívesen osztjuk meg dedikált, testreszabott képzéseink keretében, akár az Ön cégénél is.",
+                    "topic1": "HPE Storage",
+                    "topic2": "SAN Hálózatok",
+                    "topic3": "Cisco Hálózati Ismeretek",
+                    "topic4": "Aruba / Comware"
+                },
+                "contact": {
+                    "title": "Vegye fel velünk a kapcsolatot!",
+                    "text": "Kérdése van, vagy egy megbeszélést szeretne egyeztetni? Állunk rendelkezésére az alábbi elérhetőségeken.",
+                    "card1": {
+                        "title": "Központi elérhetőség",
+                        "person": "Strenner Anita Heléna, ügyvezető"
+                    },
+                    "card2": {
+                        "title": "Cégadatok",
+                        "address": "2600 Vác, Kamilla u. 1. E.épület",
+                        "tax": "Adószám: 25396562-2-13"
+                    }
+                },
+                "footer": {
+                    "copyright": "© 2024 TIBAConsulting Kft. Minden jog fenntartva.",
+                    "companyDetails": "Cégjegyzékszám: 13-09-177604 | Székhely: 2600 Vác, Kamilla u. 1. E.épület",
+                    "privacyLink": "Adatvédelmi Nyilatkozat"
+                }
+            },
+            'en': {
+                "page": {
+                    "title": "TIBAConsulting Kft. - Data Center Expertise",
+                    "description": "TIBAConsulting Kft. - Data center expertise: training, consulting, design, and implementation. HPE, Cisco, and SAN technologies."
+                },
+                "nav": {
+                    "about": "About Us",
+                    "services": "Services",
+                    "education": "Training",
+                    "contact": "Contact",
+                    "contactMobile": "Contact"
+                },
+                "hero": {
+                    "titlePrefix": "Data Center Expertise:",
+                    "titleSuffix": "From Training to High-Level Implementation.",
+                    "subtitle": "Decades of professional experience for reliable IT infrastructure.",
+                    "cta": "Discover our services"
+                },
+                "about": {
+                    "tag": "About Us",
+                    "title": "Independent Expertise, Complete Solutions.",
+                    "p1": "Since 2015, TIBAConsulting Kft. has been providing high-level, manufacturer-backed services in data center technologies.",
+                    "p2": "We don't just sell \"boxes\" – we think in solutions. Our goal is to act as independent consultants, designers, and instructors to help our clients make the best technological decisions. Our owner and colleagues, with decades of experience, actively participate in every project, from design to implementation. Our independence ensures that our clients always receive solutions tailored to their real needs, not ones pushed by a specific manufacturer. Our experts understand not only the technology but also the business processes, ensuring the delivered infrastructure genuinely creates value.",
+                    "p3": "If necessary, to provide a complete solution, we also procure the hardware and software assets required for the projects.",
+                    "imageAlt": "Professional consultation"
+                },
+                "services": {
+                    "tag": "Our Services",
+                    "title": "Technological Solutions from the Ground Up",
+                    "card1": {
+                        "title": "Consulting and Design",
+                        "text": "In-depth consultation, audits, and assessments tailored to your needs. We undertake the design of complex data center systems (server, network, storage, AI)."
+                    },
+                    "card2": {
+                        "title": "Implementation and Deployment",
+                        "text": "We don't stop at the drawing board. We manage the complete installation and deployment of data center systems, wired and wireless networks, including low and high voltage electrical work."
+                    },
+                    "card3": {
+                        "title": "Optimization and Troubleshooting",
+                        "text": "Optimizing existing systems for peak performance. We are also experienced in troubleshooting and repairing complex, \"broken\" systems."
+                    }
+                },
+                "focus": {
+                    "title": "What is Our Specialization?",
+                    "text": "We believe true expertise lies in focus. We concentrate 100% on data center and network infrastructure to provide the deepest knowledge. This dedicated focus allows us to go beyond the surface, supporting your projects with genuine, in-depth, manufacturer-level knowledge, whether it's complex troubleshooting or building a new system from scratch.",
+                    "item1": "Data center server, storage, and SAN networks",
+                    "item2": "Wired and wireless networking solutions",
+                    "item3": "High and low voltage data center implementation"
+                },
+                "education": {
+                    "tag": "Knowledge Transfer",
+                    "title": "Our Key Service: Training",
+                    "text": "We are proud that our colleagues are official Certified Instructors for several major manufacturers, such as HPE and Cisco. This is more than just a certification: it guarantees we deliver up-to-date and deep, practical knowledge. We gladly share our decades of experience and deep technological insight through dedicated, customized training sessions, even at your company's location.",
+                    "topic1": "HPE Storage",
+                    "topic2": "SAN Networks",
+                    "topic3": "Cisco Networking",
+                    "topic4": "Aruba / Comware"
+                },
+                "contact": {
+                    "title": "Get in Touch!",
+                    "text": "Have a question or want to schedule a meeting? We are available at the following contacts.",
+                    "card1": {
+                        "title": "Main Contact",
+                        "person": "Strenner Anita Heléna, Managing Director"
+                    },
+                    "card2": {
+                        "title": "Company Details",
+                        "address": "2600 Vác, Kamilla u. 1. E.épület",
+                        "tax": "Tax ID: 25396562-2-13"
+                    }
+                },
+                "footer": {
+                    "copyright": "© 2024 TIBAConsulting Kft. All rights reserved.",
+                    "companyDetails": "Company Reg. No.: 13-09-177604 | HQ: 2600 Vác, Kamilla u. 1. E.épület",
+                    "privacyLink": "Privacy Policy"
+                }
+            }
+        };
 
+        // === 2. NYELVI LOGIKA (i18n.js TARTALOM) ===
+        let currentLang = 'hu'; // Alapértelmezett nyelv
+
+        // Globális referenciák az elemekre (gyorsítótárazva)
+        const selectors = {
+            html: document.querySelector('html'),
+            langButtons: document.querySelectorAll('.lang-switcher button'),
+            elements: document.querySelectorAll('[data-i18n]')
+        };
+
+        /**
+         * Végigmegy az oldalon és kicseréli a szövegeket
+         */
+        function applyTranslations() {
+            const currentTranslations = translations[currentLang];
+            if (!currentTranslations) {
+                console.error(`Translations not found for language: ${currentLang}`);
+                return;
+            }
+
+            selectors.elements.forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                const attr = el.getAttribute('data-i18n-attr'); // Pl. 'alt' vagy 'content'
+
+                // A JSON kulcs navigálása (pl. "hero.title")
+                const text = key.split('.').reduce((obj, k) => (obj && obj[k] !== 'undefined') ? obj[k] : key, currentTranslations);
+
+                if (text === key) {
+                    console.warn(`Translation key not found: ${key} in lang ${currentLang}`);
+                }
+
+                if (attr) {
+                    // Ha speciális attribútumot (pl. meta description) kell cserélni
+                    el.setAttribute(attr, text);
+                } else {
+                    // Egyébként a belső HTML-t cseréljük
+                    el.innerHTML = text;
+                }
+            });
+
+            // Frissítjük a HTML 'lang' attribútumát
+            selectors.html.setAttribute('lang', currentLang);
+            updateActiveButton();
+        }
+
+        /**
+         * Frissíti az aktív nyelvváltó gomb stílusát
+         */
+        function updateActiveButton() {
+            selectors.langButtons.forEach(button => {
+                if (button.getAttribute('data-lang') === currentLang) {
+                    button.classList.add('active');
+                } else {
+                    button.classList.remove('active');
+                }
+            });
+        }
+
+        /**
+         * Nyelv váltása (ezt hívja az onclick)
+         * @param {string} lang - A választott nyelv
+         */
+        function changeLanguage(lang) {
+            if (lang === currentLang || !translations[lang]) return; // Ne váltsunk, ha már ez az aktív vagy nincs ilyen fordítás
+            
+            currentLang = lang;
+            localStorage.setItem('preferredLang', lang); // Elmentjük a választást
+            applyTranslations(); // Nincs fetch, csak alkalmazzuk a memóriában lévő fordítást
+        }
+
+        /**
+         * Észleli a böngésző vagy a mentett nyelvet
+         */
+        function detectLanguage() {
+            // 1. Van-e mentett választás?
+            const savedLang = localStorage.getItem('preferredLang');
+            if (savedLang && translations[savedLang]) {
+                currentLang = savedLang;
+                return;
+            }
+
+            // 2. Böngésző nyelvének ellenőrzése
+            const browserLang = navigator.language || navigator.userLanguage;
+            if (browserLang && browserLang.startsWith('en') && translations['en']) {
+                currentLang = 'en';
+            } else {
+                currentLang = 'hu'; // Alapértelmezett a magyar
+            }
+        }
+
+        // === 3. INICIALIZÁLÁS ===
+        // Várjuk, amíg a DOM betöltődik
+        document.addEventListener('DOMContentLoaded', () => {
+            detectLanguage();
+            applyTranslations(); // Azonnal alkalmazzuk a fordításokat
+        });
+
+    </script>
+</body>
 </html>

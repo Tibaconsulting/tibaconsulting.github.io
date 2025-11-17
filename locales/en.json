@@ -1,0 +1,132 @@
+{
+    "page": {
+        "title": "TIBAConsulting Kft. - Data Center Expertise",
+        "description": "TIBAConsulting Kft. - Data center expertise: training, consulting, design, and implementation. HPE, Cisco, and SAN technologies."
+    },
+    "nav": {
+        "about": "About Us",
+        "services": "Services",
+        "education": "Training",
+        "contact": "Contact",
+        "contactMobile": "Contact"
+    },
+    "hero": {
+        "titlePrefix": "Data Center Expertise:",
+        "titleSuffix": "From Training to High-Level Implementation.",
+        "subtitle": "Decades of professional experience for reliable IT infrastructure.",
+        "cta": "Discover our services"
+    },
+    "about": {
+        "tag": "About Us",
+        "title": "Independent Expertise, Complete Solutions.",
+        "p1": "Since 2015, TIBAConsulting Kft. has been providing high-level, manufacturer-backed services in data center technologies.",
+        "p2": "We don't just sell \"boxes\" – we think in solutions. Our goal is to act as independent consultants, designers, and instructors to help our clients make the best technological decisions. Our owner and colleagues, with decades of experience, actively participate in every project, from design to implementation. Our independence ensures that our clients always receive solutions tailored to their real needs, not ones pushed by a specific manufacturer. Our experts understand not only the technology but also the business processes, ensuring the delivered infrastructure genuinely creates value.",
+        "p3": "If necessary, to provide a complete solution, we also procure the hardware and software assets required for the projects.",
+        "imageAlt": "Professional consultation"
+    },
+    "services": {
+        "tag": "Our Services",
+        "title": "Technological Solutions from the Ground Up",
+        "card1": {
+            "title": "Consulting and Design",
+            "text": "In-depth consultation, audits, and assessments tailored to your needs. We undertake the design of complex data center systems (server, network, storage, AI)."
+        },
+        "card2": {
+            "title": "Implementation and Deployment",
+            "text": "We don't stop at the drawing board. We manage the complete installation and deployment of data center systems, wired and wireless networks, including low and high voltage electrical work."
+        },
+        "card3": {
+            "title": "Optimization and Troubleshooting",
+            "text": "Optimizing existing systems for peak performance. We are also experienced in troubleshooting and repairing complex, \"broken\" systems."
+        }
+    },
+    "focus": {
+        "title": "What is Our Specialization?",
+        "text": "We believe true expertise lies in focus. We concentrate 100% on data center and network infrastructure to provide the deepest knowledge. This dedicated focus allows us to go beyond the surface, supporting your projects with genuine, in-depth, manufacturer-level knowledge, whether it's complex troubleshooting or building a new system from scratch.",
+        "item1": "Data center server, storage, and SAN networks",
+        "item2": "Wired and wireless networking solutions",
+        "item3": "High and low voltage data center implementation"
+    },
+    "education": {
+        "tag": "Knowledge Transfer",
+        "title": "Our Key Service: Training",
+        "text": "We are proud that our colleagues are official Certified Instructors for several major manufacturers, such as HPE and Cisco. This is more than just a certification: it guarantees we deliver up-to-date and deep, practical knowledge. We gladly share our decades of experience and deep technological insight through dedicated, customized training sessions, even at your company's location.",
+        "topic1": "HPE Storage",
+        "topic2": "SAN Networks",
+        "topic3": "Cisco Networking",
+        "topic4": "Aruba / Comware"
+    },
+    "contact": {
+        "title": "Get in Touch!",
+        "text": "Have a question or want to schedule a meeting? We are available at the following contacts.",
+        "card1": {
+            "title": "Main Contact",
+            "person": "Strenner Anita Heléna, Managing Director"
+        },
+        "card2": {
+            "title": "Company Details",
+            "address": "2600 Vác, Kamilla u. 1. E.épület",
+            "tax": "Tax ID: 25396562-2-13"
+        }
+    },
+    "footer": {
+        "copyright": "© 2024 TIBAConsulting Kft. All rights reserved.",
+        "companyDetails": "Company Reg. No.: 13-09-177604 | HQ: 2600 Vác, Kamilla u. 1. E.épület",
+        "privacyLink": "Privacy Policy"
+    },
+    "privacy": {
+        "pageTitle": "Privacy Policy - TIBAConsulting Kft.",
+        "h1": "Privacy Policy and Information",
+        "effectiveDate": "Effective: January 1, 2024",
+        "intro1": "<strong>TIBAConsulting Korlátolt Felelősségű Társaság</strong> (hereinafter: \"Data Controller\") is committed to protecting the personal data of its clients and partners and considers the respect for informational self-determination a high priority. The Data Controller handles personal data confidentially and takes all security, technical, and organizational measures that guarantee data security.",
+        "intro2": "This statement is prepared in accordance with the General Data Protection Regulation (GDPR, 2016/679/EU) of the European Union and the Hungarian Act CXII of 2011 on Informational Self-Determination and Freedom of Information (Infotv.).",
+        "controller": {
+            "title": "1. Data Controller's Details",
+            "name": "Company Name:",
+            "shortName": "Short Name:",
+            "address": "Headquarters:",
+            "regNum": "Company Reg. No.:",
+            "taxNum": "Tax ID:",
+            "rep": "Represented by:",
+            "email": "Contact Email:",
+            "phone": "Phone:",
+            "web": "Website:"
+        },
+        "website": {
+            "title": "2. Data Processing on the www.tibaconsulting.net Website",
+            "p1": "We inform our visitors that the <strong>www.tibaconsulting.net</strong> website (hereinafter: \"Website\") <strong>does not collect personal data</strong> from its visitors during browsing.",
+            "li1": "The Website does not use registration forms, newsletter subscriptions, and does not place marketing or behavioral analysis \"cookies\" on the user's device.",
+            "li2": "The Website does not perform profiling or automated data collection.",
+            "li3": "The hosting provider may use technically essential session cookies to ensure the service, which do not store personal data and are automatically deleted when the browser is closed. Their purpose is to ensure the basic functionality of the website."
+        },
+        "contact": {
+            "title": "3. Data Processed via Contact (Email, Phone)",
+            "p1": "If you contact us via the email address or phone number listed on the Website, we process the personal data you voluntarily provide (typically: name, email address, phone number, and other information in the message/conversation).",
+            "purpose": "Purpose of data processing:",
+            "legalBasis": "Legal basis for data processing:",
+            "duration": "Duration of data storage:"
+        },
+        "security": {
+            "title": "4. Data Security",
+            "p1": "The Data Controller takes all reasonable technical and organizational measures to protect the processed personal data against unauthorized access, alteration, transmission, disclosure, deletion, or destruction."
+        },
+        "rights": {
+            "title": "5. Rights of the Data Subject",
+            "p1": "You have the following rights regarding your data processing:",
+            "li1": "<strong>Right to information:</strong> You can request information about the processing of your personal data.",
+            "li2": "<strong>Right to rectification:</strong> You can request the correction of your inaccurate data.",
+            "li3": "<strong>Right to erasure (\"right to be forgotten\"):</strong> You can request the deletion of your data, unless processing is required by law.",
+            "li4": "<strong>Right to restriction of processing:</strong> You can request the restriction of data processing.",
+            "p2": "You can submit your requests at the contact details provided in point 1 (via email or post)."
+        },
+        "remedies": {
+            "title": "6. Legal Remedies",
+            "p1": "If you feel that the Data Controller has violated your rights related to personal data protection, please first contact us at the contact details provided in point 1 to resolve the complaint peacefully.",
+            "p2": "If your complaint is not resolved satisfactorily, you have the right to turn to the supervisory authority:",
+            "naihAddress": "Headquarters:",
+            "naihPoBox": "Postal Address:",
+            "p3": "Furthermore, you have the option to go to court in case of violation of your data protection rights."
+        },
+        "backButton": "← Back to Homepage"
+    }
+}

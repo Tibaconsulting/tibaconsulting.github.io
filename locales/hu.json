@@ -1,0 +1,132 @@
+{
+    "page": {
+        "title": "TIBAConsulting Kft. - Adatközponti Szakértelem",
+        "description": "TIBAConsulting Kft. - Adatközponti szakértelem: oktatás, szaktanácsadás, tervezés és kivitelezés. HPE, Cisco és SAN technológiák."
+    },
+    "nav": {
+        "about": "Rólunk",
+        "services": "Szolgáltatások",
+        "education": "Oktatás",
+        "contact": "Kapcsolat",
+        "contactMobile": "Kapcsolat"
+    },
+    "hero": {
+        "titlePrefix": "Adatközponti Szakértelem:",
+        "titleSuffix": "Oktatástól a Magas Szintű Kivitelezésig.",
+        "subtitle": "Több évtizedes szakmai tapasztalattal a megbízható IT infrastruktúráért.",
+        "cta": "Ismerje meg szolgáltatásainkat"
+    },
+    "about": {
+        "tag": "Rólunk",
+        "title": "Független Szakértelem, Komplett Megoldások.",
+        "p1": "A TIBAConsulting Kft. 2015 óta nyújt magas szintű, gyártói tapasztalaton alapuló szolgáltatásokat az adatközponti technológiák területén.",
+        "p2": "Nem \"dobozokat\" árusítunk – mi megoldásokban gondolkodunk. Célunk, hogy független tanácsadóként, tervezőként és oktatóként segítsük ügyfeleinket a legmegfelelőbb technológiai döntések meghozatalában. Több évtizedes tapasztalattal rendelkező tulajdonosunk és kollégáink aktívan részt vesznek minden projektben, a tervezéstől kezdve a kivitelezésig. Függetlenségünk biztosítja, hogy ügyfeleink mindig a valós igényeiknek leginkább megfelelő, nem pedig egy adott gyártó által erőltetett megoldást kapják. Szakértőink nem csak a technológiát, hanem az üzleti folyamatokat is megértik, így a szállított infrastruktúra valóban értéket teremt.",
+        "p3": "Szükség esetén, a komplett megoldás érdekében, természetesen biztosítjuk a projektekhez szükséges hardver- és szoftvereszközök beszerzését is.",
+        "imageAlt": "Szakmai konzultáció"
+    },
+    "services": {
+        "tag": "Szolgáltatásaink",
+        "title": "Technológiai Megoldások az Alapoktól a Felhőkig",
+        "card1": {
+            "title": "Szaktanácsadás és Tervezés",
+            "text": "Mélyreható konzultáció, audit és felmérés az Ön igényeire szabva. Vállaljuk komplex adatközponti (szerver, hálózat, adattárolás, AI) rendszerek tervezését."
+        },
+        "card2": {
+            "title": "Kivitelezés és Üzembe helyezés",
+            "text": "Nem állunk meg a tervezőasztalnál. Vállaljuk adatközponti rendszerek, vezetékes és vezeték nélküli hálózatok teljes körű telepítését, beüzemelését, gyenge- és erősáramú kivitelezéssel együtt."
+        },
+        "card3": {
+            "title": "Optimalizálás és Hibaelhárítás",
+            "text": "Már meglévő rendszerek optimalizálása a csúcsteljesítmény érdekében. Tapasztalattal rendelkezünk komplex, \"elromlott\" rendszerek hibakeresésében és javításában is."
+        }
+    },
+    "focus": {
+        "title": "Mire specializálódtunk?",
+        "text": "Hisszük, hogy a valódi szakértelem a fókuszban rejlik. Mi 100%-ban az adatközponti és hálózati infrastruktúrára koncentrálunk, hogy a legmélyebb tudást nyújthassuk. Ez a dedikált fókusz teszi lehetővé, hogy ne csak a felszínt kapargassuk, hanem valódi, mélyreható és gyártói szintű tudással támogassuk projektjeit, legyen szó komplex hibakeresésről vagy egy teljesen új rendszer felépítéséről.",
+        "item1": "Adatközponti szerver, storage és SAN hálózatok",
+        "item2": "Vezetékes és vezeték nélküli hálózati megoldások",
+        "item3": "Erős- és gyengeáramú adatközponti kivitelezés"
+    },
+    "education": {
+        "tag": "Tudásátadás",
+        "title": "Kiemelt Szolgáltatásunk: Oktatás",
+        "text": "Büszkék vagyunk rá, hogy kollégáink több nagy nevű gyártó, mint például a HPE és a Cisco, hivatalos, minősített oktatói (Certified Instructor). Ez nem csupán egy minősítés: ez garantálja, hogy naprakész és mély, gyakorlati tudást adunk át. A megszerzett több évtizedes tapasztalatot és mély technológiai tudást szívesen osztjuk meg dedikált, testreszabott képzéseink keretében, akár az Ön cégénél is.",
+        "topic1": "HPE Storage",
+        "topic2": "SAN Hálózatok",
+        "topic3": "Cisco Hálózati Ismeretek",
+        "topic4": "Aruba / Comware"
+    },
+    "contact": {
+        "title": "Vegye fel velünk a kapcsolatot!",
+        "text": "Kérdése van, vagy egy megbeszélést szeretne egyeztetni? Állunk rendelkezésére az alábbi elérhetőségeken.",
+        "card1": {
+            "title": "Központi elérhetőség",
+            "person": "Strenner Anita Heléna, ügyvezető"
+        },
+        "card2": {
+            "title": "Cégadatok",
+            "address": "2600 Vác, Kamilla u. 1. E.épület",
+            "tax": "Adószám: 25396562-2-13"
+        }
+    },
+    "footer": {
+        "copyright": "© 2024 TIBAConsulting Kft. Minden jog fenntartva.",
+        "companyDetails": "Cégjegyzékszám: 13-09-177604 | Székhely: 2600 Vác, Kamilla u. 1. E.épület",
+        "privacyLink": "Adatvédelmi Nyilatkozat"
+    },
+    "privacy": {
+        "pageTitle": "Adatvédelmi Nyilatkozat - TIBAConsulting Kft.",
+        "h1": "Adatvédelmi Nyilatkozat és Tájékoztató",
+        "effectiveDate": "Hatályos: 2024. január 1-től",
+        "intro1": "A <strong>TIBAConsulting Korlátolt Felelősségű Társaság</strong> (a továbbiakban: \"Adatkezelő\") elkötelezett az ügyfelei és partnerei személyes adatainak védelme iránt, és kiemelten fontosnak tartja az információs önrendelkezési jog tiszteletben tartását. Az Adatkezelő a személyes adatokat bizalmasan kezeli, és megtesz minden olyan biztonsági, technikai és szervezési intézkedést, amely az adatok biztonságát garantálja.",
+        "intro2": "Jelen nyilatkozat az Európai Unió Általános Adatvédelmi Rendelete (GDPR, 2016/679/EU) és az információs önrendelkezési jogról és az információszabadságról szóló 2011. évi CXII. törvény (Infotv.) alapján készült.",
+        "controller": {
+            "title": "1. Az Adatkezelő adatai",
+            "name": "Cégnév:",
+            "shortName": "Rövid Cégnév:",
+            "address": "Székhely:",
+            "regNum": "Cégjegyzékszám:",
+            "taxNum": "Adószám:",
+            "rep": "Képviseli:",
+            "email": "Kapcsolattartó email:",
+            "phone": "Telefonszám:",
+            "web": "Webhely:"
+        },
+        "website": {
+            "title": "2. A www.tibaconsulting.net weboldal adatkezelése",
+            "p1": "Tájékoztatjuk látogatóinkat, hogy a <strong>www.tibaconsulting.net</strong> weboldal (a továbbiakban: \"Weboldal\") megtekintése során <strong>nem gyűjt személyes adatokat</strong> a látogatókról.",
+            "li1": "A Weboldal nem használ regisztrációs űrlapokat, hírlevél-feliratkozási lehetőséget, és nem helyez el a felhasználó eszközén marketing vagy viselkedés-elemző \"sütiket\" (cookie-kat).",
+            "li2": "A Weboldal nem végez profilalkotást vagy automatizált adatgyűjtést.",
+            "li3": "Előfordulhat, hogy a tárhelyszolgáltató a szolgáltatás biztosítása érdekében technikailag elengedhetetlenül szükséges munkamenet-sütiket (session cookie) használ, amelyek személyes adatot nem tárolnak, és a böngésző bezárásával automatikusan törlődnek. Ezek célja a weboldal alapvető funkcióinak biztosítása."
+        },
+        "contact": {
+            "title": "3. Kapcsolatfelvétel (Email, Telefon) útján kezelt adatok",
+            "p1": "Amennyiben Ön a Weboldalon feltüntetett email címen vagy telefonszámon keresztül felveszi velünk a kapcsolatot, az Ön által önkéntesen megadott személyes adatokat (jellemzően: név, email cím, telefonszám, és az üzenetben/beszélgetésben szereplő egyéb információk) kezeljük.",
+            "purpose": "Az adatkezelés célja:",
+            "legalBasis": "Az adatkezelés jogalapja:",
+            "duration": "Az adatok tárolásának időtartama:"
+        },
+        "security": {
+            "title": "4. Adatbiztonság",
+            "p1": "Az Adatkezelő minden ésszerű technikai és szervezési intézkedést megtesz annak érdekében, hogy megvédje az általa kezelt személyes adatokat a jogosulatlan hozzáféréstől, megváltoztatástól, továbbítástól, nyilvánosságra hozataltól, törléstől vagy megsemmisítéstől."
+        },
+        "rights": {
+            "title": "5. Az Érintett Jogai",
+            "p1": "Önt az adatkezeléssel kapcsolatban az alábbi jogok illetik meg:",
+            "li1": "<strong>Tájékoztatáshoz való jog:</strong> Kérhet tájékoztatást személyes adatai kezeléséről.",
+            "li2": "<strong>Helyesbítéshez való jog:</strong> Kérheti pontatlan adatainak helyesbítését.",
+            "li3": "<strong>Törléshez való jog (\"elfeledtetés\"):</strong> Kérheti adatai törlését, kivéve, ha az adatkezelés jogszabályi kötelezettség miatt szükséges.",
+            "li4": "<strong>Az adatkezelés korlátozásához való jog:</strong> Kérheti az adatkezelés korlátozását.",
+            "p2": "Kérelmeit a fenti, 1. pontban megadott elérhetőségeken (emailben vagy postai úton) nyújthatja be."
+        },
+        "remedies": {
+            "title": "6. Jogorvoslati lehetőségek",
+            "p1": "Amennyiben úgy érzi, hogy az Adatkezelő megsértette a személyes adatok védelméhez fűződő jogait, kérjük, első lépésként vegye fel velünk a kapcsolatot az 1. pontban megadott elérhetőségeken, hogy a panaszt békés úton orvosolhassuk.",
+            "p2": "Ha panaszát nem sikerül megnyugtatóan rendezni, Ön jogosult a felügyeleti hatósághoz fordulni:",
+            "naihAddress": "Székhely:",
+            "naihPoBox": "Postacím:",
+            "p3": "Továbbá lehetősége van bírósághoz fordulni adatvédelmi jogainak megsértése esetén."
+        },
+        "backButton": "← Vissza a Főoldalra"
+    }
+}
