@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adatvédelmi Tájékoztató – Ingram Micro EV Töltés</title>
+    <style>
+        :root {
+            --brand-primary: #005596;
+            --brand-primary-dark: #003e6e;
+            --brand-text: #1e293b;
+            --brand-text-muted: #64748b;
+            --brand-bg: #f8fafc;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--brand-bg);
+            color: var(--brand-text);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+            padding: 40px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid var(--brand-bg);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header img {
+            height: 36px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #e0f2fe;
+            color: var(--brand-primary);
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 20px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: var(--brand-primary-dark);
+            margin-bottom: 10px;
+        }
+
+        .last-updated {
+            font-size: 0.85rem;
+            color: var(--brand-text-muted);
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            color: var(--brand-primary);
+            margin-top: 30px;
+            margin-bottom: 12px;
+            border-left: 4px solid var(--brand-primary);
+            padding-left: 10px;
+        }
+
+        p, ul {
+            margin-bottom: 16px;
+            font-size: 0.95rem;
+            color: #334155;
+        }
+
+        ul {
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .table-box {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.9rem;
+        }
+
+        .table-box th, .table-box td {
+            border: 1px solid var(--border-color);
+            padding: 10px 14px;
+            text-align: left;
+        }
+
+        .table-box th {
+            background-color: #f1f5f9;
+            color: var(--brand-text);
+            font-weight: 600;
+        }
+
+        .highlight-box {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 20px 0;
+            font-size: 0.9rem;
+            color: #166534;
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--brand-text-muted);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB2ZXJzaW9uPSIxLjEiCiAgIGlkPSJzdmcxIgogICB3aWR0aD0iMjgwMi44OTQzIgogICBoZWlnaHQ9IjUzOC40ODA3NyIKICAgdmlld0JveD0iMCAwIDI4MDIuODk0MyA1MzguNDgwNzciCiAgIHNvZGlwb2RpOmRvY25hbWU9IkluZ3JhbV9NaWNyb19Xb3JkbWFya8KuX0JsdWVfQ01ZSy5qcGciCiAgIGlua3NjYXBlOmV4cG9ydC1maWxlbmFtZT0iSW5ncmFtX01pY3JvX1dvcmRtYXJrwq5fQmx1ZV9DTVlLLnN2ZyIKICAgaW5rc2NhcGU6ZXhwb3J0LXhkcGk9Ijk2IgogICBpbmtzY2FwZTpleHBvcnQteWRwaT0iOTYiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPGRlZnMKICAgICBpZD0iZGVmczEiIC8+CiAgPHNvZGlwb2RpOm5hbWVkdmlldwogICAgIGlkPSJuYW1lZHZpZXcxIgogICAgIHBhZ2Vjb2xvcj0iIzAwMDAwMCIKICAgICBib3JkZXJjb2xvcj0iIzAwMDAwMCIKICAgICBib3JkZXJvcGFjaXR5PSIwIgogICAgIGlua3NjYXBlOnNob3dwYWdlc2hhZG93PSIyIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZWNoZWNrZXJib2FyZD0iMCIKICAgICBpbmtzY2FwZTpkZXNrY29sb3I9IiNkMWQxZDEiCiAgICAgc2hvd2dyaWQ9ImZhbHNlIgogICAgIGlua3NjYXBlOmV4cG9ydC1iZ2NvbG9yPSIjMDAwMDAwMDAiCiAgICAgc2hvd2JvcmRlcj0idHJ1ZSIgLz4KICA8cGF0aAogICAgIHN0eWxlPSJmaWxsOiMxNTcwZWY7ZmlsbC1vcGFjaXR5OjEiCiAgICAgZD0ibSAwLDMyMy45ODA3NyB2IC0yMTQuNSBoIDgzLjE2NTUgODMuMTY1NSBsIC0wLjY2NTUsMTQ0LjE2NTg5IEMgMTY1LjI5OTUsMzMyLjkzNzkgMTY1LDQyOS40NjI5IDE2NSw0NjguMTQ2NjYgdiA3MC4zMzQxMSBIIDgyLjUgMCBaIG0gMjI5LDAgdiAtMjE0LjUgaCAxMjMuNSBjIDY3LjkyNSwwIDEyMy41LDAuMTQyMTkgMTIzLjUsMC4zMTU5OSAwLDAuNDYzODkgMzYuNjAxMDgsMTM4LjU5OTg1IDU5LjU5MzQ4LDIyNC45MTE1MSBsIDE5LjkwNjQ4LDc0LjcyNzQ5IDAuMjUzMywtMTQ5Ljk3NzQ5IDAuMjUzMiwtMTQ5Ljk3NzUgaCA3MS40OTY3IDcxLjQ5NjggdiAzMy4zMjU2OSAzMy4zMjU2OCBsIC0yLjYwMjgsMi40MjQzMiBjIC00LjI3MTksMy45Nzg5NSAtMTQuMzQ4LDE2LjgzNTk5IC0yMC4zOTg1LDI2LjAyODI5IC0xNS44OTY0LDI0LjE1MDg5IC0yNi41NDcyLDUyLjk4MDAxIC0zMC41NzIsODIuNzUwNjcgLTIuMDE2MiwxNC45MTI4NiAtMi4wNTA5LDQzLjk5NjQ5IC0wLjA3LDU4LjY3OTQxIDguMjY3Nyw2MS4yODc0NyAzOC4wMjY2LDExNi43MjgyNiA4MS42NDM1LDE1Mi4xMDIwNiAxNy4zMTk3LDE0LjA0NjQ0IDQxLjI2NjksMjcuNTA5NDMgNjIsMzQuODU1OTggNS43NzUsMi4wNDYzMSAxMS40LDQuMDkyMjYgMTIuNSw0LjU0NjU1IDEuMSwwLjQ1NDMgLTc2LjM5MTMsMC44NTY0NSAtMTcyLjIwMywwLjg5MzY3IGwgLTE3NC4yMDMxNiwwLjA2NzcgLTAuODYyNywtMy4yNSBjIC0wLjQ3NDQsLTEuNzg3NSAtMTkuMDU4MSwtNzAuNjg0OTYgLTQxLjI5NywtMTUzLjEwNTQ2IEwgMzcyLjUsMjMyLjI2OTg1IDM3Mi4yNDY4LDM4NS4zNzUzMSAzNzEuOTkzNiw1MzguNDgwNzcgSCAzMDAuNDk2OCAyMjkgWiBtIDczOS40OTk5NiwyMTIuODUyNzQgYyAyLjc1LC0wLjc5MTQ2IDEzLjEsLTMuNzE1MTIgMjMsLTYuNDk3MDIgNDIuMzcxNzQsLTExLjkwNjQ2IDkxLjI2OTg0LC0zMi40ODE5MiAxMzMuMjYxMjQsLTU2LjA3Mzk5IDEyLjA0MTgsLTYuNzY1NDcgMTYuMTQwOSwtOS41NDQxNCAxNS43OTc4LC0xMC43MDg4OCAtMC4yNTQ4LC0wLjg2NTA3IC0xMi4xOTQyLC00Ni4wOTQ2NiAtMjYuNTMxOCwtMTAwLjUxMDIgLTE0LjMzNzcsLTU0LjQxNTU1IC0yNi4xNzE4LC05OS4wMjc5NyAtMjYuMjk3OSwtOTkuMTM4NzIgLTAuMjMzMiwtMC4yMDQ3NyAtMTQwLjA0ODg0LDM2LjU2MjI3IC0xNDAuNDA5OTQsMzYuOTIzMzEgLTAuMTA4NCwwLjEwODQ1IDYuNTE3MiwyNS42MTIxOCAxNC43MjM2LDU2LjY3NDk3IDguMjA2NCwzMS4wNjI3OCAxNC45Mjg4LDU2Ljk3NzY3IDE0LjkzODgsNTcuNTg4NjMgMC4wNCwyLjQyNTQgLTIwLjM5MjIsMTAuMzU5ODIgLTM3LjQ4MTgsMTQuNTU1NDkgLTEyLjgyNDYsMy4xNDg1OCAtMzIuNjA5OCwzLjE1Mjg1IC00NC4zMzY2LDAuMDEgLTE2LjM0MTksLTQuMzgwMjggLTI4LjgwMTEsLTExLjYwNTMgLTQwLjY4NSwtMjMuNTkyOTggLTMyLjI5MzUsLTMyLjU3NTI4IC00Ni4wNDczLC05NC41NjcxNCAtMzAuOTY2NCwtMTM5LjU3MjQ1IDE1LjY5MSwtNDYuODI1ODggNjUuNzIyNCwtNzkuODc0MjMgMTM1LjUwMzEsLTg5LjUwNjk0IDE1LjI5OTcsLTIuMTEyMDEgNDkuNTcwMjQsLTIuOTQxMDUgNjkuOTg0OTQsLTEuNjkzMDIgOS4wNzUsMC41NTQ3OSAxNi42NTI0LDAuODU5NDkgMTYuODM4NiwwLjY3NzEyIDAuMTg2MywtMC4xODIzOCAtMy41MjYyLC0xNC45NjY2IC04LjI1LC0zMi44NTM4MSAtNC43MjM3LC0xNy44ODcyMiAtOC41ODg2LC0zMi43ODY0MSAtOC41ODg2LC0zMy4xMDkzIDAsLTAuMzIyODkgNzMuNjg3NSwtMC40MzgxMiAxNjMuNzUsLTAuMjU2MDUgMTc3LjM0NzcsMC4zNTg1MiAxNjguNzQ3NywwLjEwMzkyIDE5NC43MjcxLDUuNzY0ODUgMjAuMzQ0NCw0LjQzMzA3IDQwLjk4MjIsMTIuODExOCA1NS44NTUyLDIyLjY3NjY1IDIxLjQ2MzYsMTQuMjM2MjYgMzcuMzY2LDM2LjQzMzQxIDQzLjc0MTYsNjEuMDU2MjcgNC4xNTU4LDE2LjA0OTczIDMuNjYyNCw0MS4xNjc3MSAtMS4xNjEzLDU5LjEyODc4IC05Ljg5NTUsMzYuODQ1NjUgLTQyLjU2NDIsNjUuMDY2MzMgLTg3LjY2MjYsNzUuNzI2OTEgLTYuMTg3NSwxLjQ2MjYzIC0xMS4yNSwyLjk4ODUzIC0xMS4yNSwzLjM5MDg5IDAsMC40MDIzNSAxLjc4NywxLjAxNzMxIDMuOTcxMiwxLjM2NjU4IDcuMTk3NiwxLjE1MDk0IDIwLjM4MDgsNS43Mjk2MSAyOS42NzU5LDEwLjMwNjcyIDE1LjQ2NzIsNy42MTY0OSAzMS4wOTA5LDIxLjY2MjQgMzkuMDUyNywzNS4xMDkwNCAxLjM5ODgsMi4zNjIzNSAyLjcxMTIsNC4xMjcyIDIuOTE2NSwzLjkyMTg5IDAuMjA1MywtMC4yMDUzIDcuMzAxNSwtMjAuMTM4MTMgMTUuNzY5NCwtNDQuMjk1MTcgOC40Njc4LC0yNC4xNTcwNCAyOS42Njg2LC04NC4xOTY4OSA0Ny4xMTI3LC0xMzMuNDIxODkgMTcuNDQ0MSwtNDkuMjI1IDMyLjYwOTUsLTkyLjA4NzUgMzMuNzAwOSwtOTUuMjUgbCAxLjk4NDMsLTUuNzUgaCAxMTQuMjgxMiAxMTQuMjgxMSBsIDQuOTQyNCwxMy43NSBjIDIuNzE4NCw3LjU2MjUgMjQuMjYzLDY3Ljg2MzYyIDQ3Ljg3NzEsMTM0LjAwMjQ5IGwgNDIuOTM0NiwxMjAuMjUyMDcgMC4yNTM2LC0xMzQuMDAyNDkgMC4yNTM2LC0xMzQuMDAyNDkgaCAxMjIuODA4NiAxMjIuODA4NiBsIDI3LjkzMjEsMTE1IGMgMTUuMzYyNiw2My4yNSAyOC4xODQsMTE1IDI4LjQ5MTgsMTE1IDAuMzA3OSwwIDEyLjYwNDgsLTUwLjk2MjUgMjcuMzI2NSwtMTEzLjI1IDE0LjcyMTYsLTYyLjI4NzUgMjYuOTkwMSwtMTE0LjAzNzUgMjcuMjYzMywtMTE1IDAuNDY5NiwtMS42NTQ0MyA3LjE4MjcsLTEuNzUgMTIyLjkyOTMsLTEuNzUgSCAyNDg4IHYgMjE0LjUgMjE0LjUgaCAtNzUgLTc1IGwgLTAuMDY4LC0xNjcuNzUgYyAtMC4wNDEsLTEwMS42NzM1MiAtMC40MjYyLC0xNjYuOTYyMiAtMC45NzgsLTE2NS43NSAtMC43NDg0LDEuNjQ0MzEgLTg0Ljk1NDMsMzMxLjgwNzA4IC04NC45NTQzLDMzMy4wOTcyOCAwLDAuMjIxNSAtMzEuMTYyNSwwLjM5ODIzIC02OS4yNSwwLjM5Mjc0IGwgLTY5LjI1LC0wLjAxIC0zMS40MTI0LC0xMjQuMjQwMDIgYyAtNDkuOTc0NCwtMTk3LjY1NjYyIC01My4zNDE3LC0yMTAuNzQgLTU0LjIzOCwtMjEwLjc0IC0wLjQ2NzEsMCAtMC44NDkzLDc1LjM3NSAtMC44NDkzLDE2Ny41IHYgMTY3LjUgbCAtMTMwLjI1LC0wLjAwNCAtMTMwLjI1LC0wLjAwNCAtNC43ODU2LC0xNy4yNDU4NSBjIC0yLjYzMjEsLTkuNDg1MjIgLTguNDI4NSwtMzAuMTgzMzYgLTEyLjg4MSwtNDUuOTk1ODYgbCAtOC4wOTU0LC0yOC43NTAyOSBoIC02OS4zNDk5IC02OS4zNSBsIC0wLjU3MDksMi4yNSBjIC0wLjMxNCwxLjIzNzUgLTYuMDY5MiwyMS44MjUgLTEyLjc4OTQsNDUuNzUgbCAtMTIuMjE4NCw0My41IC0xMjQuNzI5NywwLjI1Mzg5IEMgMTM4My4xMjg0LDUzOC4zNzQzIDEzMjcsNTM4LjMyMTA2IDEzMjcsNTM4LjExNjI5IGMgMCwtMS4zNzI4MiAtMTEuMTg2MSwtODMuMTg3MzEgLTEyLjAzOTUsLTg4LjA1NjM2IC01LjExNDksLTI5LjE4MjU1IC0xNS40MjEyLC00Ni44NjYzNCAtMzAuNjMwNiwtNTIuNTU2OTIgLTguMzQ1NSwtMy4xMjI0NiAtMTcuMjQ4MiwtMy45NTY5OCAtNDIuNTc5OSwtMy45OTEzNiBsIC0yMi43NSwtMC4wMzA5IHYgNzIuNSA3Mi41IGwgLTEyNy43NSwtMC4xMDQxMiBjIC0xMTIuOTEzODQsLTAuMDkyIC0xMjcuMTY5MzQsLTAuMjcxMjMgLTEyMi43NTAwNCwtMS41NDMxNCB6IE0gMTcxNy45OTksMzQyLjIzMDc3IGMgLTAuMDEsLTEuODI0NzkgLTQ1Ljg4NiwtMTM5LjIwOTY0IC00Ni41NjEzLC0xMzkuNDI3NzQgLTAuNTE1NywtMC4xNjY1OSAtMTEuMDEzNCwzMC42MzAyNSAtMjMuMzI4Miw2OC40Mzc0MiAtMTIuMzE0NywzNy44MDcxOCAtMjIuNTg5Nyw2OS4zMDI4MiAtMjIuODMzMyw2OS45OTAzMiAtMC4zNTAyLDAuOTg4NDUgOS4zMDQzLDEuMjUgNDYuMTQwNSwxLjI1IDI1LjYyMDgsMCA0Ni41ODI5LC0wLjExMjUgNDYuNTgyMywtMC4yNSB6IG0gLTQzMC4xNzUyLC00OC4xMjI3OSBjIDE5LjkyMDEsLTUuMTYxMDggMzIuMzYyNiwtMTcuODI4NjEgMzUuMzc2NCwtMzYuMDE2NCAzLjE4NzUsLTE5LjIzNTgzIC02LjAxNiwtMzYuOTM3MDYgLTIzLjQ1MzQsLTQ1LjEwODMxIC0xMi4wNTMsLTUuNjQ4MDkgLTE4Ljg0NjgsLTYuNTAyNSAtNTEuNzA0NiwtNi41MDI1IEggMTIxOSB2IDQ1LjA5NTUyIDQ1LjA5NTUxIGwgMzEuMjUsLTAuNDYyNyBjIDI0LjU0NDUsLTAuMzYzNDIgMzIuNjA2OSwtMC44MTQyNyAzNy41NzM4LC0yLjEwMTEyIHogbSAxMzA5LjQwMjYsMjI3LjEyMjc5IDAuMjczNiwtMTcuMjUgMjUuNzMyNCwtNy40Njc2NCBjIDE0LjE1MjgsLTQuMTA3MjEgMjUuNDAyOCwtNy43NjY4MyAyNSwtOC4xMzI1IC0wLjU1MjksLTAuNTAxOSAtMzEuODM3NiwtMTAuMzEzMjMgLTQ5LjQ4MjQsLTE1LjUxODM5IC0xLjU4LC0wLjQ2NjEgLTEuNzUsLTIuMjA5NyAtMS43NSwtMTcuOTQ4ODYgdiAtMTcuNDMyNjEgaCA0Ni41IDQ2LjUgdiAxMS41IDExLjUgbCAtMzUuNzUsMC4wNTg1IC0zNS43NSwwLjA1ODUgMjQuNSw3LjUxNDM5IGMgMTMuNDc1LDQuMTMyOTIgMjkuNTYyNSw5LjA4MTYyIDM1Ljc1LDEwLjk5NzExIGwgMTEuMjUsMy40ODI3MSB2IDcuNzE3NzQgNy43MTc3NCBsIC0zNS42MzAyLDEwLjQ3NjY5IC0zNS42MzAxLDEwLjQ3NjY5IDM1LjYzMDEsMC4yNjI2MyAzNS42MzAyLDAuMjYyNjMgdiA5LjQ4NzMgOS40ODczNyBoIC00Ni41MjM2IC00Ni41MjM2IHogTSAyNTk3LDQwMS40ODA3NyB2IC0xMSBoIDQ2LjUgNDYuNSB2IDExIDExIGggLTQ2LjUgLTQ2LjUgeiBtIDMyLjYzNDEsLTMyLjA5MDIzIGMgLTEzLjI1MDgsLTIuNzA5NTIgLTI0LjU0MjUsLTEwLjkxNTY3IC0yOS44NDc0LC0yMS42OTEzOCAtMy4xNjMxLC02LjQyNTIzIC0zLjI4NjcsLTcuMTI4NDcgLTMuMjg2NywtMTguNjk3MzYgMCwtMTAuODgwNzcgMC4yNDg1LC0xMi41NTA5NCAyLjYxOTgsLTE3LjYwNzUxIDMuMjg5MSwtNy4wMTM2MSA4LjcwNzMsLTEyLjQ4NzE5IDE1LjM4ODgsLTE1LjU0NjA5IDUuMzcwNSwtMi40NTg2OCAxNi4xMzY5LC01LjA1NTI3IDE3LjA3NDMsLTQuMTE3ODkgMC4yOTQzLDAuMjk0MzcgMC44NTAxLDUuNDk2NDcgMS4yMzQ5LDExLjU2MDIgbCAwLjY5OTYsMTEuMDI0OTkgLTUuODQ3MywxLjE1MDM5IGMgLTcuOTk3LDEuNTczMzEgLTEyLjY2NzEsNS44MDgzMiAtMTMuMzgsMTIuMTMzNTIgLTEuNDAwNSwxMi40MjU0NyA5Ljg0ODYsMTguNTE1MTEgMzIuNjk3MywxNy43MDA0NyAxOC4zMjE5LC0wLjY1MzI0IDI1LjAwMDgsLTUuMTA5NjUgMjUuMDA4OSwtMTYuNjg2NzYgMCwtNC44OTQ5OSAtMC4zMzQ4LC01LjcwNjE5IC0zLjg0MDksLTkuMjEyMjggLTIuNDM5NiwtMi40Mzk1NCAtNS41MTI4LC00LjI5MDc5IC04LjQwOSwtNS4wNjU0IGwgLTQuNTY0MywtMS4yMjA3NyAwLjQ5MDEsLTkuNTY2OTUgYyAwLjI2OTYsLTUuMjYxODIgMC42ODYxLC0xMC4xODU3NyAwLjkyNTYsLTEwLjk0MjEgMC42NDg0LC0yLjA0NzQzIDcuNjYwNiwtMC42ODQ5NiAxNS4wOTk2LDIuOTMzODUgMTEuNTE5Miw1LjYwMzcxIDE3Ljk4MDcsMTYuMTEzMzIgMTkuMDIzMSwzMC45NDEzIDEuMzU5LDE5LjMzMTc3IC04LjcyNDMsMzQuNjI1ODYgLTI3LjA0NjcsNDEuMDIzNjEgLTcuMTQ2OCwyLjQ5NTQ5IC0yNS45NjE0LDMuNTM4MDEgLTM0LjAzOTcsMS44ODYxNiB6IG0gLTMyLjM5OTYsLTEyMy42NTk3NyBjIDAuNDE4MiwtMjkuNDU4NzUgMC45MjAxLC0zMi4zNDIzIDYuODkwMSwtMzkuNTg1MDMgNC40OTY4LC01LjQ1NTM2IDEwLjAwNDIsLTcuOTE0MzUgMTguOTE5MSwtOC40NDcxOCA2LjI1NTYsLTAuMzczODkgOC40MzEzLC0wLjA2OTEgMTIuNzQxNiwxLjc4NTIyIDQuNzE2NywyLjAyOTAzIDEwLjExMDIsNi44NjMwOCAxMi43MTQ3LDExLjM5NTcxIDAuOTA3LDEuNTc4NTEgMi43ODY4LDAuOTkwMDUgMjAuMjE3NSwtNi4zMjkyIDEwLjU2OTcsLTQuNDM4MjQgMTkuNjgyMiwtOC4wNjk1MiAyMC4yNSwtOC4wNjk1MiAwLjY1NSwwIDEuMDI0Nyw0LjQ3OTQ2IDEuMDExMSwxMi4yNSBsIC0wLjAyMSwxMi4yNSAtMTguMjI4Nyw3LjAxMTkgLTE4LjIyODYsNy4wMTE5MSAtMC4yOTM4LDcuMjM4MDkgLTAuMjkzOCw3LjIzODEgSCAyNjcxLjQ1NjIgMjY5MCB2IDExLjUgMTEuNSBoIC00Ni41NzI2IC00Ni41NzI1IHogbSAzOS43NTk5LC00LjUgYyAtMC4wMSwtMTAuNDYwNTYgLTEuMjY5NiwtMTQuOTYyMzYgLTUuMTAwNCwtMTguMTg1NzIgLTUuOTczOSwtNS4wMjY3NyAtMTQuNjE3MSwtMS44MjI2MSAtMTYuODU5Miw2LjI1IC0wLjU2MywyLjAyNzE0IC0xLjAyNjIsNy4zOTgyMiAtMS4wMjkyLDExLjkzNTcyIGwgLTAuMDEsOC4yNSBoIDExLjUgMTEuNSB6IE0gMjYyNS41LDE3OS42NjkzNiBjIC0xMi44MjYsLTMuODAzNTQgLTIwLjY5NjYsLTkuOTI5MTMgLTI2LjIxNSwtMjAuNDAyNjkgLTIuNTc4OCwtNC44OTQ1NCAtMi43ODUsLTYuMTM3MzUgLTIuNzg1LC0xNi43ODU5IDAsLTEwLjU3MTM0IDAuMjI2MSwtMTEuOTYwNSAyLjgwMDQsLTE3LjIwMjYxIDcuMzM2NywtMTQuOTQwNDEgMjcuMDAzOCwtMjMuOTk4MDUgNDguNzU1MSwtMjIuNDU0MSAyNS44NjIxLDEuODM1NzUgNDEuMTk0NCwxNC45NTQzOSA0Mi42NzIsMzYuNTExMDcgMS4yNzI5LDE4LjU3MTM1IC04LjE5MDMsMzIuNzUzNiAtMjYuMjI3NSwzOS4zMDY0MyAtOC40MjE5LDMuMDU5NjMgLTMwLjIxMiwzLjYzMzg4IC0zOSwxLjAyNzggeiBtIDM0Ljk0ODIsLTIzLjM1MDYxIGMgMi4xNzE1LC0wLjcxMjM3IDUuNjU5LC0yLjkyMjY2IDcuNzUsLTQuOTExNzYgMy4zOTU4LC0zLjIzMDM0IDMuODAxNCwtNC4xNDAzMyAzLjc5ODEsLTguNTIxMzggMCwtNi41MDY0MyAtMi41Nzk1LC0xMC41MzA1MyAtOC42NDg2LC0xMy41MTgzMyAtNC40NTYzLC0yLjE5MzgzIC02LjA1ODgsLTIuMzg2NTEgLTE5Ljg0NzcsLTIuMzg2NTEgLTE0LjAxMzksMCAtMTUuMzI1MywwLjE2NDM2IC0xOS45NDgsMi41IC02LjM3MDksMy4yMTg4OCAtOS4wNTIsNi44OTgxNyAtOS4wNTIsMTIuNDIxOTQgMCw3LjkwOTY0IDQuNTg3NywxMi41OTkwNCAxNC45MDY5LDE1LjIzNzIxIDYuMTcyMiwxLjU3Nzk3IDI1LjI2NzksMS4wNzI4IDMxLjA0MTMsLTAuODIxMTcgeiBNIDI3NDksODcuNDUwMDE1IGMgLTExLjkxMzUsLTIuNDg0MyAtMjQuODQyNCwtMTIuNzcxMzYgLTMwLjM3OTIsLTI0LjE3MTY1IC0xMC43NzM1LC0yMi4xODI1NSAtMS4yMjUyLC00OC45MjA0OSAyMS4zMTM4LC01OS42ODQ1MjAyIDcuMjg2MywtMy40Nzk4IDcuOTcxMSwtMy42MTIzMSAxOC41NjU0LC0zLjU5MjM3IDkuMDE3NCwwLjAxNyAxMS45OTEzLDAuNDIxMjEgMTYuNSwyLjI0Mjg3IDExLjEyNzYsNC40OTU5MyAyMC44OTAzLDE0LjI4ODg0MDIgMjUuMTU4NiwyNS4yMzY0MzAyIDMuMjc5LDguNDEwMjIgMy42NjI4LDIxLjY3MjkxIDAuODY2NywyOS45NDYwNCAtNi4wOTE1LDE4LjAyMzM0IC0yMS4zODQzLDI5LjcxNjU5IC00MC4wMjUzLDMwLjYwNDM4IC00LjEyNSwwLjE5NjQ2IC05LjUyNSwtMC4wNjUxIC0xMiwtMC41ODExOCB6IG0gMjMuMjM1OCwtMTEuOTE4NjYgYyA2LjMzNDcsLTMuMDE5NjYgMTIuNTA0LC05LjMzODc5IDE1LjY2OTksLTE2LjA1MDU4IDIuMjc4NSwtNC44MzA0NyAyLjU5NDMsLTYuNzc4MiAyLjU5NDMsLTE2IDAsLTEwLjA0OTkzIC0wLjE0NjEsLTEwLjc2OTQxIC0zLjQwODEsLTE2Ljc4NTIyIC01Ljk1ODIsLTEwLjk4ODEyIC0xNS45MzQ3LC0xNy4zNjY1ODAyIC0yNy40MzY0LC0xNy41NDE0NzAyIC05LjY1OCwtMC4xNDY4NiAtMTYuMDQ2OSwyLjU0MTMzMDIgLTIzLjMyMzgsOS44MTM2MzAyIC01LjM1MzEsNS4zNDk4MSAtNi40NjAxLDcuMTI1NDggLTguMzc3MywxMy40MzcyMyAtNS44MjM0LDE5LjE3MjM4IDMuMDA1NSwzOC4wNTMzNyAyMC45Mjc5LDQ0Ljc1NTI3IDUuMzgyNiwyLjAxMjc2IDE3LjQ4NDgsMS4xNjg2NiAyMy4zNTM1LC0xLjYyODg2IHogTSAyNzQxLDQzLjk4MDc3NSB2IC0yNS41IGggMTMuNTMyMSBjIDE1LjQ2OTcsMCAxOS4yNzQ1LDEuMDQ2NjkgMjIuNTAwMyw2LjE4OTgyIDEuNjc0OSwyLjY3MDM2IDIuMDA2Niw0LjU0MzczIDEuNzE2MSw5LjY5MjA2IC0wLjMyMTksNS43MDUyOCAtMC43MDA0LDYuNjg1OTUgLTMuNTcwMSw5LjI1IC0xLjc2NTUsMS41Nzc0NyAtNC4wNzYzLDIuODY4MTIgLTUuMTM1MiwyLjg2ODEyIC0xLjA1ODgsMCAtMi4xMzg1LDAuMzQ1MTYgLTIuMzk5MiwwLjc2NzAyIC0wLjI2MDcsMC40MjE4NyAyLjQxMjcsNS40MDAxNiA1Ljk0MSwxMS4wNjI4OSAzLjUyODIsNS42NjI3MiA2LjQxNSwxMC40OTI1NiA2LjQxNSwxMC43MzI5OCAwLDAuMjQwNDEgLTIuNDE3NCwwLjQzNzExIC01LjM3MiwwLjQzNzExIGggLTUuMzcyMSBsIC02LjQyMDcsLTEwLjc1IGMgLTQuNjcxMiwtNy44MjA4IC03LjAyMjIsLTEwLjgzNzA3IC04LjYyOCwtMTEuMDY5NTUgLTIuMTYyNiwtMC4zMTMwOSAtMi4yMDcyLC0wLjA5NTggLTIuMjA3MiwxMC43NSB2IDExLjA2OTU1IGggLTUuNSAtNS41IHogbSAyNC40MzM3LC01LjY1MTc2IGMgNC42MjM3LC0yLjEwNjY3IDQuNjQ5OCwtOC41Nzc4OCAwLjA0MywtMTAuNjc2OCAtMS40MTQsLTAuNjQ0MjkgLTUuMDI0OCwtMS4xNzE0NCAtOC4wMjQsLTEuMTcxNDQgSCAyNzUyIHYgNi41IDYuNSBoIDUuNDUyOSBjIDIuOTk5MiwwIDYuNTkwNSwtMC41MTgyOSA3Ljk4MDgsLTEuMTUxNzYgeiIKICAgICBpZD0icGF0aDEiCiAgICAgaW5rc2NhcGU6ZXhwb3J0LWZpbGVuYW1lPSJwYXRoMiIKICAgICBpbmtzY2FwZTpleHBvcnQteGRwaT0iOTYiCiAgICAgaW5rc2NhcGU6ZXhwb3J0LXlkcGk9Ijk2IiAvPgo8L3N2Zz4K" alt="Ingram Micro Logo" onerror="this.style.display='none'">
+        <span class="badge">Google Play & GDPR Megfelelőség</span>
+    </div>
+
+    <h1>Adatvédelmi Tájékoztató</h1>
+    <div class="last-updated">Alkalmazás: <strong>Ingram Micro EV Töltés</strong> | Közzétevő: <strong>Tiba Consulting</strong> | Hatályos: 2026. szeptember 23.</div>
+
+    <div class="highlight-box">
+        <strong>Gyors összefoglaló a felhasználóknak:</strong> Ezt az alkalmazást a <strong>Tiba Consulting</strong> fejlesztette és teszi közzé az <strong>Ingram Micro Magyarország Kft.</strong> megbízásából, kizárólag a telephelyi elektromosautó-töltők (Ingram Micro Demo Center) indításához, leállításához és a saját fogyasztás nyomon követéséhez. Az applikáció nem követi a tartózkodási helyet, nem tartalmaz reklámokat, nem végez profilalkotást, és semmilyen adatot nem értékesít vagy ad át külső harmadik félnek.
+    </div>
+
+    <h2>1. A Fejlesztő, Közzétevő és a Megbízó megnevezése</h2>
+    <p>
+        <strong>Alkalmazásfejlesztő és Közzétevő (Developer & Publisher):</strong><br>
+        Tiba Consulting<br>
+        Kapcsolattartó / Ügyfélszolgálat: <strong>tomi@tibaconsulting.net</strong>
+    </p>
+    <p>
+        <strong>Megbízó és a Telephelyi Töltőinfrastruktúra Üzemeltetője (Client / Data Controller):</strong><br>
+        Ingram Micro Magyarország Kft.<br>
+        Telephely: Ingram Micro Demo Center (IMDC)
+    </p>
+    <p>
+        Jelen adatvédelmi tájékoztatót a Tiba Consulting adja ki, mint az alkalmazás közzétevője. Az alkalmazás kizárólag az Ingram Micro Magyarország Kft. zárt telephelyi töltőinfrastruktúrájának vezérlésére és a felhatalmazott felhasználók azonosítására szolgál.
+    </p>
+
+    <h2>2. A kezelt adatok köre és az adatkezelés célja</h2>
+    <p>Az alkalmazás rendeltetésszerű működéséhez kizárólag az alábbi technikai és azonosítási adatokat kezeli:</p>
+
+    <table class="table-box">
+        <thead>
+            <tr>
+                <th>Adat típusa</th>
+                <th>Adatkezelés célja</th>
+                <th>Kötelező / Opcionális</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>RFID Kártyaazonosító (idTag)</strong></td>
+                <td>A felhasználó azonosítása a töltőrendszerben, jogosultság-ellenőrzés, töltés indítása/leállítása.</td>
+                <td>Kötelező az app használatához</td>
+            </tr>
+            <tr>
+                <td><strong>Felhasználó neve</strong></td>
+                <td>A munkavállaló/partner nevének megjelenítése a felületen és az elszámolási kimutatásokban.</td>
+                <td>Belső nyilvántartásból származik</td>
+            </tr>
+            <tr>
+                <td><strong>Töltési adatok (Telemetria)</strong></td>
+                <td>Töltőpont azonosítója, tranzakció kezdete és vége, felvett villamos energia (kWh), pillanatnyi teljesítmény (kW).</td>
+                <td>Alkalmazásfunkció, telephelyi terheléselosztás (LME)</td>
+            </tr>
+            <tr>
+                <td><strong>Hálózati kapcsolat állapota</strong></td>
+                <td>Annak ellenőrzése, hogy az eszköz eléri-e a helyi 'IMDC' vezérlőszervert (biztonsági okból a töltés csak telephelyen engedélyezett).</td>
+                <td>Helyi ellenőrzés (nem kerül tárolásra)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>3. Amit az alkalmazás KIFEJEZETTEN NEM gyűjt</h2>
+    <ul>
+        <li><strong>NEM gyűjt GPS helyadatokat:</strong> Az app nem kéri el és nem fér hozzá a telefon pontos vagy hozzávetőleges helymeghatározásához (GPS/Location adatokhoz).</li>
+        <li><strong>NEM fér hozzá személyes fájlokhoz:</strong> Nem fér hozzá a kamerához, mikrofonhoz, fotókhoz, névjegyzékhez vagy SMS-ekhez.</li>
+        <li><strong>NEM tartalmaz harmadik féltől származó elemző vagy hirdetési modulokat:</strong> Nincs benne Google Analytics, Firebase Analytics, Facebook SDK, sem pedig hirdetési azonosító (AD_ID).</li>
+        <li><strong>NEM gyűjt pénzügyi adatokat:</strong> Nem kezel bankkártyát vagy fizetési információkat; az elszámolás belső telephelyi elszámolási szabályok alapján történik.</li>
+    </ul>
+
+    <h2>4. Adattovábbítás harmadik fél részére</h2>
+    <p>
+        Az Ingram Micro EV Töltés alkalmazás semmilyen körülmények között <strong>nem értékesíti, nem adja át és nem teszi hozzáférhetővé a kezelt adatokat harmadik fél részére</strong> (ideértve a marketing- és adatelemző cégeket is). Minden adatfeldolgozás a cég saját, belső hálózatán futó szerverén történik.
+    </p>
+
+    <h2>5. Adatbiztonság és Titkosítás</h2>
+    <ul>
+        <li><strong>Átviteli biztonság:</strong> Az alkalmazás és a központi szerver közötti minden kommunikáció titkosított protokollon (HTTPS / TLS) keresztül zajlik.</li>
+        <li><strong>Helyi tárolás a telefonon:</strong> A telefonon kizárólag a sikeres belépéshez szükséges kártyaazonosító kerül helyi gyorsítótárba (Local Storage / SharedPreferences) a kényelmes használat érdekében, hogy ne kelljen minden indításkor újra begépelni.</li>
+    </ul>
+
+    <h2>6. Az érintettek jogai és Adattörlés</h2>
+    <p>A felhasználóknak bármikor jogukban áll:</p>
+    <ul>
+        <li><strong>Helyi adatok azonnali törlése:</strong> Az alkalmazásban a Beállítások (⚙️) menüpontban a „Kijelentkezés” vagy kártyamódosítás gombra kattintva a telefonról azonnal és véglegesen törlődik az eltárolt RFID azonosító.</li>
+        <li><strong>Szerveroldali adatok törlése / javítása:</strong> A munkavállaló kérheti az RFID nyilvántartásból való törlését vagy adatainak anonimizálását a helyi rendszergazdánál a <em>tomi@tibaconsulting.net</em> címen.</li>
+    </ul>
+
+    <h2>7. Kapcsolatfelvétel</h2>
+    <p>
+        Ha bármilyen kérdésed vagy észrevételed van az adatkezeléssel kapcsolatban, kérjük, fordulj az IT üzemeltetéshez a <strong>tomi@tibaconsulting.net</strong> e-mail címen.
+    </p>
+
+    <div class="footer">
+        &copy; 2026 Ingram Micro Magyarország Kft. Minden jog fenntartva.
+    </div>
+</div>
+
+</body>
+</html>
